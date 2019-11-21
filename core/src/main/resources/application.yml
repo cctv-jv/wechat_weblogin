@@ -1,0 +1,17 @@
+server:
+  port: 8088
+
+spring:
+  # 系统使用的环境
+  profiles:
+    active: dev
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+#weChat
+appId:
+secret:
+redirect_uri: http://ip:port/wx/login
+redirect_bindWeChat: http://ip:port/other?openId=
+redirect_getToken: http://ip:port/other?token=

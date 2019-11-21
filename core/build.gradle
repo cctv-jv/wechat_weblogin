@@ -17,6 +17,23 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    // lombok
+    annotationProcessor 'org.projectlombok:lombok:1.18.4'
+    compileOnly 'org.projectlombok:lombok:1.18.4'
+    // mysql
+    compile 'mysql:mysql-connector-java:5.1.45'
+    // druid
+    compile 'com.alibaba:druid:1.1.16'
+    // fastjson
+    compile 'com.alibaba:fastjson:1.2.38'
+    // httpclient
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.6'
+    // common
+    compile('org.apache.commons:commons-lang3:3.4')
+    compile('org.apache.commons:commons-collections4:4.1')
+    compile('commons-io:commons-io:2.6')
+    compile group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
 }
 
 test {
